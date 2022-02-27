@@ -1,0 +1,42 @@
+[alias]
+	unstage = restore --staged --
+	line = log --oneline --show-signature
+	graph = log --oneline --graph
+	merged = branch --merged
+	unmerged = branch --no-merged
+	st = status
+	stat = status
+	ss = status --short
+	egc = config --global -e
+	elc = config --local -e
+	br = branch
+	p = pull
+	a = add
+	psh = push
+	cl = config --list
+	clo = config --list --show-origin
+	bi = bisect
+	sh = show
+[init]
+	defaultBranch = master
+[core]
+	editor = code --new-window --wait
+[diff]
+	tool = vscode-diff
+	submodule = log
+[difftool]
+	prompt = false
+[difftool "vscode-diff"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = vscode-merge
+[mergetool]
+	keepBackup = false
+[mergetool "vscode-merge"]
+	cmd = code --wait $MERGED
+[diff "exif"]
+	textconv = exiftool
+[status]
+	submoduleSummary = true
+[push]
+	recurseSubmodules = on-demand
