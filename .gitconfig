@@ -17,6 +17,7 @@
 	clo = config --list --show-origin
 	bi = bisect
 	sh = show
+    sw = switch
 [init]
 	defaultBranch = master
 [core]
