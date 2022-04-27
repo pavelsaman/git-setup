@@ -1,7 +1,7 @@
 [alias]
 	unstage = restore --staged --
 	line = log --oneline --show-signature
-	graph = log --oneline --graph --decorate
+	graph = log --decorate --oneline --graph
 	merged = branch --merged
 	unmerged = branch --no-merged
 	st = status
@@ -17,7 +17,9 @@
 	clo = config --list --show-origin
 	bi = bisect
 	sh = show
-  sw = switch
+	sw = switch
+    bra = branch -a
+    brr = branch -r
 [init]
 	defaultBranch = master
 [core]
