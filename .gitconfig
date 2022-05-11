@@ -20,6 +20,9 @@
 	sw = switch
     bra = branch -a
     brr = branch -r
+    stl = stash list
+    sta = stash apply
+    stc = stash clear
 [init]
 	defaultBranch = master
 [core]
